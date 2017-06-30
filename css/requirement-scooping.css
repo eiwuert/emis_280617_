@@ -1,0 +1,123 @@
+.header-action-checklist {
+    height: 40px;
+    padding: 0 0 0 8px;
+    width: 100%;
+}
+/*.header-meeting{
+    padding: 0 0 0 8px;
+    width: 100%;
+    min-height: 85px;
+}*/
+.questions{
+	padding: 0 15px;
+}
+.col-pad{
+	padding: 10px;
+}
+
+.col-radio{
+	margin: 0 auto;
+	float: none !important	;
+}
+.col-radio .col-md-4{
+	text-align: center;
+}
+#action-checklist{
+	margin: 0 auto;
+	float: none;
+}
+.quesion-box{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+.btn-question{
+	float:right;
+	margin-top: -10px !important;
+}
+.quesion-box .radio-inline{
+	margin-left: 0!important;
+}
+#checklist td{
+	padding:5px 10px;
+}
+.label-pad-lf{
+	padding:0 30px !important;
+}
+
+.form-box{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+#meeting .row:after{
+	clear: none;
+}
+#meeting .col-md-5, #meeting .col-md-7{
+	padding-left: 0;
+	padding-right: 0;
+}
+.hide {
+    display: none;
+}
+
+/*Drag and Drop*/
+#sortable > li:hover {
+    cursor: move;
+    background: #F3F3F3;
+}
+
+/*end drag and drop*/
+.preview{
+	background: #008080;
+}
+.preview img{
+	height: 35px;
+}
+.create-meeting ul li, .project-consideration ul li, #meeting ul li, .view-meeting ul li, .preview-form ul li{
+	list-style: none;
+}
+/*.form-implement .col-md-3{
+	border: 1px solid;
+}*/
+.form-implement .btn-question{
+	margin-top: 12px !important;
+	padding:40px 20px; 
+	width: 190px;
+	box-shadow: 0px 10px 14px -7px #276873 !important;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.form-implement h3{
+	text-align: center;
+}
+.implement-top-left{
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+}
+.implement-top-right{
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+}
+.implement-bottom-left{
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+.implement-bottom-right{
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+.form-implement-table{
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 533px) {
+    .form-implement .btn-question{
+		padding: 25px 0 ;
+		width: 115px ;
+	}
+	.label-pad-lf h4{
+		font-size: 12px;
+	}
+}
+.hconsideration {
+	color: #BB811D;
+}

@@ -1,0 +1,22 @@
+<?php
+$lang['academic_year'] = 'Academic Year';
+$lang['academic_year_id'] = 'Academic Year ID';
+$lang['academic_year_name'] = 'Academic Year';
+$lang['academic_year_new'] = 'New Academic Year';
+$lang['academic_year_update'] = 'Update';
+$lang['academic_year_no_academic_year_to_display'] = 'There is no academic to display';
+$lang['academic_year_basic_information'] = 'Academic Year Basic Information';
+$lang['academic_year_successful_adding']='You have successfully added academic ';
+$lang['academic_year_successful_updating']='You have successfully updated academic ';
+$lang['academic_year_error_adding_updating'] = 'Error adding/updating academic';
+$lang['academic_year_successful_deleted']='Deleted';
+$lang['academic_year_one_or_multiple']='status(s)';
+$lang['academic_year_cannot_be_deleted']='Could not deleted selected academic.';
+$lang['academic_year_confirm_delete']='Are you sure to delete selected academic(s)?';
+$lang['academic_year_none_selected']='You have not selected any academic to delete';
+$lang['academic_year_view_student_status'] = 'View academic';
+$lang['academic_year_confirm_delete_item'] = 'Are you sure you want to delete this academic?';
+$lang['academic_year_error_delete'] = 'Error deleting academic';
+$lang['academic_year_duplicate_exists'] = 'Duplicate Academic Year';
+$lang['academic_year_exists'] = 'Academic Year Existing';
+$lang['academic_year_section_name_required'] = 'Academic Year is required';

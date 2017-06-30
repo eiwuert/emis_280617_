@@ -1,0 +1,57 @@
+<?php $this->load->view("partial/header"); ?>
+
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        var table_columns = ['', 'room_name', 'room_id'];
+        enable_sorting('<?php echo site_url("$controller_name/sorting"); ?>', table_columns, <?php echo $per_page; ?>, <?php echo json_encode($order_col); ?>, <?php echo json_encode($order_dir); ?>);
+        enable_select_all();
+        enable_checkboxes();
+        enable_row_selection();
+        enable_search('<?php echo site_url("$controller_name/suggest"); ?>',<?php echo json_encode(lang("common_confirm_search")); ?>);
+        enable_delete(<?php echo json_encode(lang($controller_name . "_confirm_delete")); ?>,<?php echo json_encode(lang($controller_name . "_none_selected")); ?>);
+    });
+</script>
+<div class="main-content-inner">
+    <div class=" alert alert-info" id='top'>
+        <?php echo create_breadcrumb(); ?>
+     </div> 
+    <div class="page-header" id='page-header'>
+        <h1> 
+            <i class="icon fa fa-list"></i>
+            <?php echo lang('module_' . $controller_name); ?>
+        </h1>
+    </div>
+
+    <div class="page-content">
+        
+       
+        <div class="row">
+            <div class="col-xs-30">
+                <div class="widget-box" id="widgets">
+                
+                    <!-- Start -->
+                    <div class="widget-content nopadding table_holder table-responsive" >
+                        <?php echo $manage_table; ?>
+                    </div>
+
+                    <?php if ($pagination) { ?>
+                        <div class="pagination hidden-print alternate text-center fg-toolbar ui-toolbar" id="pagination_bottom" >
+                            <?php echo $pagination; ?>
+                        </div>
+                    <?php } ?>
+                    <!-- End -->
+
+                </div> 
+            </div> 
+        </div><!-- /.page-content -->
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.ui-autocomplete').css('overflow','auto')
+        $('.ui-autocomplete').css('overflow-x','hidden')
+        $('.ui-autocomplete').css('max-height','400px')
+    })
+</script>
+<?php $this->load->view("partial/footer"); ?>

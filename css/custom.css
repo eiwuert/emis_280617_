@@ -1,0 +1,398 @@
+.margin_left{
+  margin-left: 1px !important;
+  }
+div#widgets {
+border: none;
+}
+div#breadcrumbs {
+  margin-top: -19px !important;
+}
+#top{
+	  margin-top: -20px;
+  	margin-bottom: 14px;
+  	border-radius: 0px !important;
+  	padding: 6px 11px 10px 10px;
+}
+#footer-content{
+	border:none !important;
+	  bottom: -53px;
+}
+#page-header{
+ 	margin-top:0px;
+}
+#hide_work, #hide_video{
+    display: none;
+}
+#navbar{
+	border-radius: 0px;
+}
+
+.remove{
+  cursor:pointer;
+}
+
+#mySelect{display:none}
+/*#ic__datepicker-1{
+    left: 359px;
+top: 613px;
+}*/
+
+
+/*Project Management*/
+.box-project {
+    margin: 30px 0 0;
+    padding: 15px 25px 25px;;
+    border: 2px solid;
+    font-size: 14px;
+    line-height: 25px;
+}
+.div-button {
+    text-align: center;
+}
+.box-button {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid;
+    margin: 5px 10px 0px;
+}
+.box-button:hover{
+  background: none;
+}
+.header-pro-overview {
+    padding: 0 0 0 15px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+.nav-search {
+    float: right;
+    position: relative !important;
+    margin: 0 0 0 35px;
+}
+.new-pro {
+    float: left;
+}
+.date-project {
+    float: right;
+}
+
+/*---- form create new project---*/
+.text-select{
+  color: #999;
+}
+
+    .borderless{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+#deleteTitle{
+    cursor: pointer;
+}
+#section_1{
+    display: none;
+}
+
+#nextFields{
+  display: none;
+}
+span .ui-helper-hidden-accessible{
+  display: none;
+}
+#clone_field{
+  display: none;
+}
+.contracts span{
+  display: none;
+}
+
+.my_class{
+
+  height:200px;
+}
+.my_body{
+
+  height:200px;
+ background-color:#D9EDF7;
+  border:2px solid #31708f;
+}
+.my_pen{
+  float: right;
+  width:20px;
+ margin-right: 20px;
+}
+@media only screen and ( max-width: 767px ) {
+  .my_pen{
+
+    margin-top:-170px; 
+}
+}
+.myTab{
+  height:41px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#tab_content{
+
+  height: 1000px;
+}
+hr{
+
+  margin: 20px 0;
+border: 0;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #fff;
+}
+#save{
+  margin-top: 20px;
+  float: right;
+}
+.wid_toolbar{
+
+  margin-top: -34px;
+}
+.wid_header{
+
+  background: #D9EDF7;
+}
+.wrap_task{
+
+  width:auto; height: 300px;
+}
+.add1{
+
+  margin-top:60px;
+}
+.add2{
+
+  margin-top:115px;
+}
+.add3{
+
+  margin-top:170px;
+}
+.add4{
+
+  margin-top:145px;
+}
+.add6{
+
+  margin-top:200px;
+}
+/*------------form before-----------------*/
+.tab-con{
+
+  background-color:#D9EDF7; border:2px solid #31708f;"
+}
+.row-fluid1{
+  padding-bottom: 200px
+}
+.tabl{
+
+  padding: 4px 0 2px 0;
+}
+.tab-con1{
+
+  background-color:#D9EDF7;  border:2px solid #31708f;
+}
+.total{
+
+   padding: 20px 120px; font-size: 22px; font-weight: bold; 
+}
+.tab-con2{
+
+  background-color:#D9EDF7; border:2px solid #31708f;
+            margin-left: 3px;
+}
+.nav-font{
+
+  font-size: 14px;
+}
+.row-fluid2{
+
+  padding-bottom: 200px
+}
+.consul_name{
+
+  padding: 4px 0 2px 0;
+}
+/*.selected{
+
+  width:180px;
+}*/
+.row-fluid3{
+
+  padding-bottom: 230px
+}
+.con-fee{
+
+  text-align:center; font-size:14px;
+}
+.total{
+
+   padding: 20px 120px; font-size: 22px; font-weight: bold; 
+}
+.save{
+  float:right;
+  margin-right:20px;
+}
+.con_row_fluid{
+
+  margin-top: 170px;
+}
+.text-area{
+
+  margin-top: 40px;
+}
+.status{
+   width: 96px;
+margin-left: 10%;
+height: 33px;
+}
+.add-new{
+
+  font-size: 14px;
+}
+.pill-menu li{
+
+
+width: 490px;
+
+
+}
+.wid-main{
+
+  float: right;
+}
+  .saves{
+
+    margin-right: 365px;
+  }
+/*project expense*/
+  .pro-exp{
+    text-align:center;
+  }
+  .pro-exp-title{
+
+    margin-top: 5px;
+  }
+  .pro-exp-btn-save{
+      float: left;
+  }
+  .pro-exp-save{
+
+    margin-top: 50px;
+  }
+  .pro-exp-total{
+
+    text-align: center;
+  }
+  .pro-exp-table{
+
+    margin-top: 30px;
+  }
+  input.search-query {
+    padding-left:26px;
+}
+
+form.form-search {
+    position: relative;
+
+}
+
+form.form-search:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
+    background-position: -48px 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}
+.pro-ex-search{
+
+  margin-top: 100px;
+}
+.claim_Item{
+
+  width:250px;
+}
+.claim_Item td input{
+
+  width:100%;
+}
+.claim_Item td select{
+
+  width:100%;
+}
+.claim_description{
+
+  width:300px;
+}
+.claim_description td input{
+
+  width:100%;
+}
+.claim_description td select{
+
+  width:100%;
+}
+.pro-claim-btn-save{
+
+margin-top: 60px;
+}
+/*project_invoice*/
+.pro_invoice_form{
+
+width:150%;
+}
+.pro_invoice_from1{
+
+  width:100%;
+}
+.pro_invoice_amount{
+
+  float: right;
+}
+/*user management*/
+.custom-col-lg-4 {
+
+  text-align: left;
+  width: 26.333%;
+}
+.consult-form-group{
+
+  width:50%;
+}
+.consult-col-lg-4 {
+
+  text-align: left;
+  width: 26.333%;
+}
+.consult-control-label{
+
+  text-align: left;
+}
+.form-control1{
+
+  height:80px;
+  width: 370px;
+}
+.note{
+
+margin-left: 15px;
+margin-top: 10px;
+}
+.green{
+
+  color:green;
+}
+.orange{
+
+  color: orange;
+}
+}

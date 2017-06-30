@@ -1,0 +1,67 @@
+#recruitment .col-md-5, #recruitment .col-md-7, #shortlist{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.t-pad{
+	padding:5px;
+}
+
+.group-experience .form-group {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+
+}
+.group-experience{
+	margin: 10px;
+	border: 1px solid #e2e2e2;
+	border-radius: 2px;
+	padding-top:10px;
+}
+
+.group-education{
+	margin: 10px;
+	border: 1px solid #e2e2e2;
+	border-radius: 2px;
+}
+.error{
+	color: red;
+	font-size: 13px;
+	margin-bottom: -15px;
+	margin-top: 10px;
+}
+.remove-experience-section, .remove-skill-section, .remove-lang-section{
+	cursor: pointer;
+	color: red;
+}
+.ui-datepicker td > a.ui-state-highlight{
+	background-color: #FFA500 !important;
+}
+.required{
+	color: #F00;
+}
+
+.remove-none{
+	display: none;
+}
+#btnAddExperience,#btnAddSkill,#btnAddLang{
+	cursor: pointer;
+	color: #23527C;
+	text-decoration: underline;
+}
+
+.link_select {
+    margin-bottom: 0;
+}
+
+.ic__header {
+    height: 45px !important;
+}
+#btnAddEducation{
+	cursor: pointer;
+	color: #23527C;
+	text-decoration: underline;
+}
+#id_education_clone{
+	display: none;
+}

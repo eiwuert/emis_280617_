@@ -1,0 +1,22 @@
+<?php
+$lang['grade'] = 'Grade';
+$lang['grade_id'] = 'Grade ID';
+$lang['grade_name'] = 'Grade Name';
+$lang['grade_note'] = 'Note';
+$lang['grade_new'] = 'New Grade';
+$lang['grade_update'] = 'Update';
+$lang['grade_no_grade_to_display'] = 'There is no Grade to display';
+$lang['grade_basic_information'] = 'Grade Basic Information';
+$lang['grade_successful_adding']='You have successfully added Grade ';
+$lang['grade_successful_updating']='You have successfully updated Grade ';
+$lang['grade_error_adding_updating'] = 'Error adding/updating Grade';
+$lang['grade_successful_deleted']='Deleted';
+$lang['grade_one_or_multiple']='Grade(s)';
+$lang['grade_cannot_be_deleted']='Could not deleted selected Grade.';
+$lang['grade_confirm_delete']='Are you sure to delete selected Grade(s)?';
+$lang['grade_none_selected']='You have not selected any Grade to delete';
+$lang['grade_view_student_status'] = 'View Grade';
+$lang['grade_confirm_delete_item'] = 'Are you sure you want to delete this Grade?';
+$lang['grade_error_delete'] = 'Error deleting Grade';
+$lang['grade_duplicate_exists'] = 'Grade duplicated';
+$lang['grade_grade_name_required'] = 'Grade Name is required';

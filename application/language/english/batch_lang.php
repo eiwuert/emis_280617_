@@ -1,0 +1,27 @@
+<?php
+$lang['batch'] = 'batch';
+$lang['batch_id'] = 'ID';
+$lang['batch_name'] = 'Batch Name';
+$lang['batch_number'] = 'Batch Number';
+$lang['batch_major'] = 'Batch batch_major';
+$lang['batch_faculty'] = 'Batch Faculty';
+$lang['batch_start_date'] = 'Batch Start Date';
+$lang['batch_end_date'] = 'Batch End Date';
+$lang['batch_new'] = 'Add New';
+$lang['batch_update'] = 'Update';
+$lang['batch_no_batch_to_display'] = 'There is no Batch to display';
+$lang['batch_basic_information'] = 'Batch Basic Information';
+$lang['batch_successful_adding']='You have successfully added Batch ';
+$lang['batch_successful_updating']='You have successfully updated Batch ';
+$lang['batch_error_adding_updating'] = 'Error adding/updating school_class';
+$lang['batch_successful_deleted']='Deleted';
+$lang['batch_cannot_be_deleted']='Could not deleted selected school_class.';
+$lang['batch_confirm_delete']='Are you sure to delete selected batch(s)?';
+$lang['batch_none_selected']='You have not selected any batch to delete';
+$lang['batch_duplicate_exists'] = 'Class duplicated';
+$lang['batch_name_required'] = 'Batch Name is required';
+$lang['batch_major_required'] = 'Major is required';
+$lang['batch_faculty_required'] = 'Faculty is required';
+$lang['batch_start_date_required'] = 'Start Date is required';
+$lang['batch_end_date_required'] = 'End Date is required';
+$lang['batch_number_required'] = 'Batch Number is required';

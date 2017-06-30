@@ -1,0 +1,22 @@
+<?php
+$lang['admission_categories'] = 'Admission category';
+$lang['admission_category'] = 'Admission category';
+$lang['admission_category_new']='Add admission category';
+$lang['admission_category_update'] = 'Update admission category';
+$lang['admission_category_category'] = 'Category';
+$lang['admission_category_id'] = 'Admission category ID';
+$lang['admission_category_name'] = 'Admission category Name';
+$lang['admission_category_alias'] = 'Admission category Alias';
+$lang['admission_category_no_admission_category_to_display'] = 'There is no admission category to display';
+$lang['admission_category_basic_information'] = 'Admission category Basic Information';
+$lang['admission_category_successful_adding']='You have successfully added admission category ';
+$lang['admission_category_successful_updating']='You have successfully updated admission category ';
+$lang['admission_category_error_adding_updating'] = 'Error adding/updating admission category';
+$lang['admission_category_successful_deleted']='Deleted';
+$lang['admission_category_one_or_multiple']='status(s)';
+$lang['admission_category_cannot_be_deleted']='Could not deleted selected admission category.';
+$lang['admission_category_confirm_delete']='Are you sure to delete selected admission category(s)?';
+$lang['admission_category_none_selected']='You have not selected any admission category to delete';
+$lang['admission_category_view_student_status'] = 'View admission category';
+$lang['admission_category_confirm_delete_item'] = 'Are you sure you want to delete this item?';
+$lang['admission_category_error_delete'] = 'Error deleting admission category';

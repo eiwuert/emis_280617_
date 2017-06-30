@@ -1,0 +1,63 @@
+div {
+	display: block;
+}
+p {
+  padding: 0.5mm;
+}
+
+#company_address{ font-size:16px;font-weight: bold; margin-top:-10px}
+#cname{color:#2C90A9 ;font-weight:bold}#address{color:#2C90A9 ;}
+
+table.table {
+  border: 0.2mm solid #000;
+  width: 515pt; 
+  border-top: solid 0.5mm #5f95ca; 
+  border-right: solid 0.5mm #5f95ca;  
+  border-bottom: solid 0.5mm #5f95ca; 
+  border-left: solid 0.5mm #5f95ca; 
+  padding: 1mm; 
+}
+table.table-no-border {
+  border: none;
+  border-top: none; 
+  border-right: none;  
+  border-bottom: none; 
+  border-left: none; 
+}
+table.table th {
+  text-align: center;
+}
+table.table th, table.table td {
+  border: 0.2mm solid #CCC;
+  padding: 1mm;
+}
+table.table-no-border th, table.table-no-border td {
+  border: none;
+  padding: 1mm;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+span.top-header {
+  padding: 1mm;
+  color: #2C90A9;
+}
+.label-space {
+  height: 40mm;
+}
+.txt-top-invoice {
+  line-height: 1mm;
+}
+li {
+  line-height: 2mm;
+  padding: 1mm 0mm;
+}
+.pulling-right {
+  float: right;
+}

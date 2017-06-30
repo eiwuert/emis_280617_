@@ -1,0 +1,59 @@
+td{
+    padding:5px;
+}
+
+.remove-none{
+    display: none;
+}
+.remove{
+    color: red;
+}
+.td_total{
+    text-align: right;
+}
+.lb_total{
+    line-height: 35px;
+}
+#view_claim tr{
+    background: none;
+    border: 1px solid #f1f1f1;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.attach_file {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#expenseType{
+    width: 126px;
+}
+#claimed{
+    width: 110px;
+}
+    
+.fa.fa-minus-circle.btn.btn-danger.remove_attach.remove-none-attach{
+    display: none;
+}
+.fa.fa-plus-circle.btn.btn-primary.add_attach.add-none-attach{
+    display: none;
+}
+.attachSection .add_attach, .attachSection .remove_attach{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.remove-section i{
+    margin-top: -4px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+}

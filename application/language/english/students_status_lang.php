@@ -1,0 +1,23 @@
+<?php
+$lang['students_status'] = 'Student Status';
+$lang['students_status_id'] = 'ID';
+$lang['students_status_name'] = 'Name';
+$lang['students_status_description'] = 'Description';
+$lang['students_status_no_student_status_to_display'] = 'There is no student status to display';
+$lang['students_status_new'] = 'New Student Status';
+$lang['students_status_update'] = 'Update Student Status';
+$lang['students_status_basic_information'] = 'Student Status Basic Information';
+$lang['students_status_duplicate_exists'] = 'A similar Student Status name already exists. Do you want to continue?';
+$lang['students_status_status_exists']='The status already exists';
+$lang['students_status_name_required']='Name is a required field';
+$lang['students_status_successful_adding']='You have successfully added student status ';
+$lang['students_status_successful_updating']='You have successfully updated student status ';
+$lang['students_status_error_adding_updating'] = 'Error adding/updating student status';
+$lang['students_status_successful_deleted']='Deleted';
+$lang['students_status_one_or_multiple']='status(s)';
+$lang['students_status_cannot_be_deleted']='Could not deleted selected student status.';
+$lang['students_status_confirm_delete']='Are you sure to delete selected student status(s)?';
+$lang['students_status_none_selected']='You have not selected any student status to delete';
+$lang['students_status_view_student_status'] = 'View Student Status';
+$lang['students_status_confirm_delete_item'] = 'Are you sure you want to delete this item?';
+$lang['students_status_error_delete'] = 'Error deleting student status';

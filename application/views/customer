@@ -1,0 +1,356 @@
+        <div class="form-group">
+                <?php echo form_label(lang('common_full_name') . ':', 'full_name', array('class' => ' col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+                <?php
+                echo form_input(array(
+                    'class' => 'form-control',
+                    'name' => 'full_name',
+                    'id' => 'full_name',
+                    'class' => 'filter form-control',
+                    'value' => $person_info->full_name)
+                );
+                ?>
+            </div>
+        </div>
+
+        <div class="form-group">
+                <?php echo form_label(lang('common_email') . ':', 'email', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ' . ($controller_name == 'employees' ? 'required' : 'not_required'))); ?>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+                <?php
+                echo form_input(array(
+                    'class' => 'form-control',
+                    'name' => 'email',
+                    'id' => 'email',
+                    'class' => 'width-100',
+                    'value' => $person_info->email)
+                );
+                ?>
+            </div>
+        </div>
+    <div class="form-group">	
+        <?php echo form_label(lang('cons_nationality') . ':', 'c', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+        <div class="col-sm-9 col-md-9 col-lg-9">
+            <?php $this->view('consultant/nationality_list'); ?>
+        </div>
+    </div>
+<div class="form-group">	
+<?php echo form_label(lang('common_country') . ':', 'country', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+<?php
+$this->load->view('consultant/countries_list');
+?>
+    </div>
+</div>
+<div class="form-group">	
+<?php echo form_label(lang('cons_passport') . ':', 'passport', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_input(array(
+        'class' => 'form-control form-inps',
+        'name' => 'passport',
+        'id' => 'passport',
+        'value' => $person_info->passport));
+    ?>
+    </div>
+</div>
+<div class="form-group">	
+<?php echo form_label(lang('cons_passport_date') . ':', 'passport', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <span class="block input-icon input-icon-right">
+                                            <span class="input-group date datepicker" data-date="<?php echo $person_info->start_date ? date(get_date_format(), strtotime($item_info->start_date)) : ''; ?>" data-date-format=<?php echo json_encode(get_js_date_format()); ?>>
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <?php
+                                                echo form_input(array(
+                                                    'name' => 'pass_date',
+                                                    'id' => 'pass_date',
+                                                    'class' => 'width-100',
+                                                    'placeholder' => 'Passport Expiry Date',
+                                                    'value' => $person_info->dob ? date(get_date_format(), strtotime($person_info->dob)) : '')
+                                                );
+                                                ?> </span>
+           </span>
+    </div>
+</div>
+
+        <div class="form-group">	
+<?php echo form_label(lang('common_choose_avatar') . ':', 'phone_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+<?php echo $person_info->image_id ? img(array('src' => site_url('app_files/view/' . $person_info->image_id), 'class' => 'img-polaroid img-polaroid-s')) : img(array('src' => base_url() . '/img/avatar.png', 'class' => 'img-polaroid', 'id' => 'image_empty')); ?>
+
+            </div>
+        </div>
+
+    <div class="cod-md-11">
+        <label class="col-sm-3 col-md-3 col-lg-2 control-label ">&nbsp;</label>
+        <div class="col-sm-9 col-md-9 col-lg-0">
+            <ul class="list-unstyled text-center">
+                <li >
+                    <div id="avatar">
+
+                        <div class="col-sm-9 col-md-9 col-lg-9">
+
+
+                        </div>
+                    </div>
+                    <br /><br />
+                </li>
+                <li>
+<?php
+echo form_upload(array(
+    'name' => 'image_id',
+    'id' => 'image_id',
+    'value' => $person_info->image_id)
+);
+?>     
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+<?php if ($person_info->image_id) { ?>
+
+    <div class="form-group">
+    <?php echo form_label(lang('items_del_image') . ':', 'del_image', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
+        <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_checkbox(array(
+        'name' => 'del_image',
+        'id' => 'del_image',
+        'class' => 'form-control delete-checkbox',
+        'value' => 1
+    ));
+    ?>
+        </div>
+    </div>
+
+<?php } ?>
+
+  <div class="form-group">	
+<?php echo form_label('Choose File ' . ':', 'phone_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+            <div class="col-sm-9 col-md-9 col-lg-9">
+<?php echo $person_info->image_id ? img(array('src' => site_url('app_files/view/' . $person_info->image_id), 'class' => 'img-polaroid img-polaroid-s')) : img(array('src' => base_url() . '/img/avatar.png', 'class' => 'img-polaroid', 'id' => 'image_empty')); ?>
+
+            </div>
+        </div>
+
+    <div class="cod-md-11">
+        <label class="col-sm-3 col-md-3 col-lg-2 control-label ">&nbsp;</label>
+        <div class="col-sm-9 col-md-9 col-lg-0">
+            <ul class="list-unstyled text-center">
+                <li >
+                    <div id="avatar">
+
+                        <div class="col-sm-9 col-md-9 col-lg-9">
+
+
+                        </div>
+                    </div>
+                    <br /><br />
+                </li>
+                <li>
+<?php
+echo form_upload(array(
+    'name' => 'image_id',
+    'id' => 'image_id',
+    'value' => $person_info->image_id)
+);
+?>     
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+<?php if ($person_info->image_id) { ?>
+
+    <div class="form-group">
+    <?php echo form_label(lang('items_del_image') . ':', 'del_image', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
+        <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_checkbox(array(
+        'name' => 'del_image',
+        'id' => 'del_image',
+        'class' => 'form-control delete-checkbox',
+        'value' => 1
+    ));
+    ?>
+        </div>
+    </div>
+
+<?php } ?>
+<div class="form-group">	
+<?php echo form_label(lang('cons_person_contact') . ':', 'person_contact', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_input(array(
+        'class' => 'form-control form-inps',
+        'name' => 'person_contact',
+        'id' => 'person_contact',
+        'value' => $person_info->person_contact));
+    ?>
+    </div>
+</div>
+<div class="form-group">	
+        <?php echo form_label(lang('cons_address') . ':', 'address_1', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+        <?php
+        echo form_textarea(array(
+            'class' => 'form-control form-inps',
+            'name' => 'address_1',
+            'row' => '10',
+            'cols' => '1',
+            'id' => 'address_1',
+            'value' => $person_info->address_1));
+        ?>
+    </div>
+</div>
+ <legend class="page-header text-info"> &nbsp; &nbsp; <?php echo lang("cons_account_info"); ?></legend>
+ 
+<div class="form-group">	
+<?php echo form_label(lang('cons_bank_code') . ':', 'bank_code', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_input(array(
+        'class' => 'form-control form-inps',
+        'name' => 'bank_code',
+        'id' => 'bank_code',
+        'value' => $person_info->bank_code));
+    ?>
+    </div>
+</div>
+ <div class="form-group">	
+<?php echo form_label(lang('cons_bank_number') . ':', 'bank_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_input(array(
+        'class' => 'form-control form-inps',
+        'name' => 'bank_number',
+        'id' => 'bank_number',
+        'value' => $person_info->bank_number));
+    ?>
+    </div>
+</div>
+ <div class="form-group">	
+<?php echo form_label(lang('cons_branch_code') . ':', 'bank_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_input(array(
+        'class' => 'form-control form-inps',
+        'name' => 'branch_code',
+        'id' => 'branch_code',
+        'value' => $person_info->branch_code));
+    ?>
+    </div>
+</div>
+  <div class="form-group">	
+<?php echo form_label(lang('cons_swift_code') . ':', 'bank_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_input(array(
+        'class' => 'form-control form-inps',
+        'name' => 'swift_code',
+        'id' => 'swift_code',
+        'value' => $person_info->swift_code));
+    ?>
+    </div>
+</div>
+ <legend class="page-header text-info"> &nbsp; &nbsp; <?php echo lang("cons_work_experience"); ?></legend>
+  <div class="form-group">	
+<?php echo form_label(lang('cons_please_work_experience') . ':', 'work_experience', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_textarea(array(
+        'class' => 'form-control form-inps',
+        'name' => 'work_experience',
+        'id' => 'work_experience',
+        'value' => $person_info->work_experience));
+    ?>
+    </div>
+</div>
+  
+ <legend class="page-header text-info"> &nbsp; &nbsp; <?php echo lang("cons_video"); ?></legend>
+
+  <div class="form-group">	
+<?php echo form_label(lang('cons_video') . ':', 'work_experience', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+    <?php
+    echo form_textarea(array(
+        'class' => 'form-control form-inps',
+        'name' => 'video',
+        'id' => 'video',
+        'value' => $person_info->video));
+    ?>
+    </div>
+</div>
+ <legend class="page-header text-info"> &nbsp; &nbsp; <?php echo lang("cons_language"); ?></legend>
+    <div class="form-group">	
+<?php echo form_label(lang('cons_primary') . ':', 'language', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+                    <?php
+                    echo form_dropdown('language', array(
+                        'english' => 'English',
+                        'indonesia' => 'Indonesia',
+                        'spanish' => 'Spanish',
+                        'french' => 'French',
+                        'italian' => 'Italian',
+                        'dutch' => 'Dutch',
+                        'portugues' => 'Portugues',
+                        'arabic' => 'Arabic',
+                            ), $person_info->language ? $person_info->language : $this->Appconfig->get_raw_language_value(),'class="width-100"');
+                    ?>
+    </div>
+</div>
+ <div class="form-group">	
+<?php echo form_label(lang('cons_secondary') . ':', 'secondary', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+    <div class="col-sm-9 col-md-9 col-lg-9">
+                    <?php
+                    echo form_dropdown('secondary', array(
+                        'english' => 'English',
+                        'indonesia' => 'Indonesia',
+                        'spanish' => 'Spanish',
+                        'french' => 'French',
+                        'italian' => 'Italian',
+                        'dutch' => 'Dutch',
+                        'portugues' => 'Portugues',
+                        'arabic' => 'Arabic',
+                            ), $person_info->lang_secondary,'class="width-100"');
+                    ?>
+    </div>
+</div>
+<?php
+if ($this->Location->get_info_for_key('mailchimp_api_key')) {
+    ?>
+    <div class="form-group">
+        <div class="column">	
+    <?php echo form_label(lang('common_mailing_lists') . ':', 'mailchimp_mailing_lists', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label ')); ?>
+        </div>
+
+        <div class="column">
+            <ul style="list-style: none; float:left;">
+    <?php
+    foreach (get_all_mailchimps_lists() as $list) {
+        echo '<li>';
+        echo form_checkbox(array('name' => 'mailing_lists[]',
+            'id' => $list['id'],
+            'value' => $list['id'],
+            'checked' => email_subscribed_to_list($person_info->email, $list['id']),
+            'label' => $list['id']));
+        echo ' ' . form_label($list['name'], $list['id'], array('style' => 'float: none;'));
+        echo '</li>';
+    }
+    ?>
+            </ul>
+        </div>
+        <div class="cleared"></div>
+    </div>
+    <?php
+}
+?> 
+ <script>
+      $('.datepicker').datepicker({
+            format: <?php echo json_encode(get_js_date_format()); ?>
+        });
+     </script>

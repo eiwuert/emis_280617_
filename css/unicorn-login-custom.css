@@ -1,0 +1,26 @@
+
+body {
+  background-image: none;
+  background-color: #fff;
+  
+}
+
+#loginbox {
+    height: 250px;
+}
+#loginbox_reset {
+    height: 186px;
+}
+
+.alert {
+    margin-top: 20px;
+    width: 400px;
+}
+@media (max-width: 422px){
+  .msg-demo{
+    width: 100%;
+    /*display: none !important;*/
+  }
+}
+
+

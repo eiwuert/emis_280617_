@@ -1,0 +1,22 @@
+<?php
+$lang['category_products'] = 'Category Product';
+$lang['category_products_id'] = 'Category Product ID';
+$lang['category_products_name'] = 'Category Product Name';
+$lang['category_products_note'] = 'Note';
+$lang['category_products_new'] = 'New Category Products';
+$lang['category_products_update'] = 'Update';
+$lang['category_products_no_category_products_to_display'] = 'There is noCategory Products to display';
+$lang['category_products_basic_information'] = 'Category Product Basic Information';
+$lang['category_products_successful_adding']='You have successfully addedCategory Products ';
+$lang['category_products_successful_updating']='You have successfully updatedCategory Products ';
+$lang['category_products_error_adding_updating'] = 'Error adding/updating Category Products';
+$lang['category_products_successful_deleted']='Deleted';
+$lang['category_products_one_or_multiple']='Category Product(s)';
+$lang['category_products_cannot_be_deleted']='Could not deleted selected Category Products.';
+$lang['category_products_confirm_delete']='Are you sure to delete selected Category Products(s)?';
+$lang['category_products_none_selected']='You have not selected anyCategory Products to delete';
+$lang['category_products_view_student_status'] = 'View Category Products';
+$lang['category_products_confirm_delete_item'] = 'Are you sure you want to delete this Category Products?';
+$lang['category_products_error_delete'] = 'Error deleting Category Products';
+$lang['category_products_duplicate_exists'] = 'Category Product duplicated';
+$lang['category_products_category_products_name_required'] = 'Category Product Name is required';

@@ -1,0 +1,69 @@
+div {
+	display: block;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.blank-gap {
+  width: 600px;
+  padding-bottom: 10px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+#company_address{ font-size:16px;font-weight: bold; margin-top:-10px}
+#cname{color:#2C90A9 ;font-weight:bold}#address{color:#2C90A9 ;}
+
+.list {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  margin-top: 3px
+}
+
+.lists {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+table.table {
+  border: 0.2mm solid #000;
+  width: 515pt; 
+  border-top: solid 0.5mm #5f95ca; 
+  border-right: solid 0.5mm #5f95ca;  
+  border-bottom: solid 0.5mm #5f95ca; 
+  border-left: solid 0.5mm #5f95ca; 
+  padding: 1mm; 
+}
+
+table.table th {
+  text-align: center;
+}
+table.table th, table.table td {
+  border: 0.2mm solid #CCC;
+  padding: 2mm;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+span.top-header {
+  padding: 1mm;
+  color: #2C90A9;
+}

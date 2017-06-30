@@ -1,0 +1,20 @@
+<?php
+$lang['designation'] = 'Designation';
+$lang['designation_new']='Add Designation';
+$lang['designation_update'] = 'Update Designation';
+$lang['designation_id'] = 'Designation ID';
+$lang['designation_name'] = 'Designation Name';
+$lang['designation_alias'] = 'Designation Alias';
+$lang['designation_no_designation_to_display'] = 'There is no designation to display';
+$lang['designation_basic_information'] = 'Designation Basic Information';
+$lang['designation_successful_adding']='You have successfully added designation ';
+$lang['designation_successful_updating']='You have successfully updated designation ';
+$lang['designation_error_adding_updating'] = 'Error adding/updating designation';
+$lang['designation_successful_deleted']='Deleted';
+$lang['designation_one_or_multiple']='status(s)';
+$lang['designation_cannot_be_deleted']='Could not deleted selected designation.';
+$lang['designation_confirm_delete']='Are you sure to delete selected designation(s)?';
+$lang['designation_none_selected']='You have not selected any designation to delete';
+$lang['designation_view_student_status'] = 'View designation';
+$lang['designation_confirm_delete_item'] = 'Are you sure you want to delete this item?';
+$lang['designation_error_delete'] = 'Error deleting designation';

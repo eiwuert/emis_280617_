@@ -1,0 +1,27 @@
+<?php
+$lang['letter_id'] = 'Letter ID';
+$lang['received_date'] = 'Received Date';
+$lang['send_from'] = 'Send From';
+$lang['orginazation'] = 'Organization';
+$lang['purpose'] = 'Purpose';
+$lang['received_by'] = 'Received By';
+// $lang['course_code_duplicate_exists'] = 'Course code duplicated';
+$lang['letter_in_successful_adding']='You have successfully added Letter In ';
+$lang['letter_in_successful_updating']='You have successfully updated Letter In ';
+// $lang['course_error_adding_updating'] = 'Error adding/updating course';
+// $lang['course_duplicate_exists'] = 'Course duplicated';
+$lang['received_date_required'] = 'Received Date is required';
+$lang['send_from_required'] = 'Send From is required';
+$lang['orginazation_required'] = 'Organization is required';
+$lang['purpose_required'] = 'Purpose is required';
+$lang['received_by_required'] = 'Received By is required';
+$lang['letter_in_error_adding_updating'] = 'Error adding/updating Letter In';
+$lang['letter_in_successful_deleted']='Deleted';
+$lang['letter_in_cannot_be_deleted']='Could not deleted selected Letter In.';
+$lang['letter_in_one_or_multiple']='Letter In(s)';
+$lang['letter_in_confirm_delete']='Are you sure to delete selected Letter In(s)?';
+$lang['letter_in_none_selected']='You have not selected any Letter to delete selected Letter In(s)?';
+$lang['letter_in_no_letter_to_display'] = 'There is no Letter In to display';
+$lang['letter_in_new'] = 'New Letter In';
+$lang['letter_in_update'] = 'Update Letter In';
+$lang['letter_in_information'] = 'Letter In Information';

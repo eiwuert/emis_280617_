@@ -1,0 +1,27 @@
+<?php
+$lang['mou_id'] = 'Mou ID';
+$lang['sign_date_mou'] = 'Sing Date';
+$lang['valid_date_from_mou'] = 'Valid Date From';
+$lang['valid_date_to_mou'] = 'Valid Date To';
+$lang['orginazation_mou'] = 'Organization';
+$lang['purpose_mou'] = 'Purpose';
+$lang['response_by_mou'] = 'Response by';
+$lang['sign_date_reqiored'] = 'Sign Date required';
+$lang['valid_date_from_required'] = 'Valid Date From is required';
+$lang['valid_date_to_required'] = 'Valid Date To is required';
+$lang['orginazation_required'] = 'Orginazation is required';
+$lang['purpose_required'] = 'Purpose is required';
+$lang['response_by_required'] = 'Response by required';
+$lang['mou_successful_adding']='You have successfully added Mou ';
+$lang['mou_successful_updating']='You have successfully updated mou ';
+$lang['mou_error_adding_updating'] = 'Error adding/updating major';
+$lang['mou_to_display'] = 'Mou to Display';
+$lang['mou_successful_deleted']='Deleted';
+$lang['mou_cannot_be_deleted']='Could not deleted selected Mou.';
+$lang['mou_one_or_multiple']='mou(s)';
+$lang['mou_confirm_delete']='Are you sure you want to delete the selected mou(s)?';
+$lang['mou_none_selected']='You have not selected any Mou to delete.';
+$lang['mou_no_mou_to_display'] = 'There is no Mou to display';
+$lang['mou_new'] = 'New Mou';
+$lang['mou_update'] = 'Update Mou';
+$lang['mou_information'] = 'Mou Information';

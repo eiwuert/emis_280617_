@@ -1,0 +1,88 @@
+#company_info{
+	font-size: 16px;
+	word-spacing: 10px;
+}
+#and{
+	font-size: 16px;
+}
+#colla_info{
+	font-size: 16px;
+}
+.definitions{
+	font-size: 16px;
+	line-height: 20px;
+
+}
+.td3{
+	width:30%;
+}
+#img-logo{
+	width:90px;
+	height: 100px;
+}
+#pa_company_name{
+	color: blue;
+	font-size: 24px;
+}
+#address{
+	color: blue;
+	font-size: 16px;
+}
+#table-table{
+	border: 1px solid #000;
+}
+#table-table tr{
+	border: 1px solid #000;
+}
+.div_info{
+	width:120px;
+	/*float: left;*/
+	height: 50px;
+	background: red;
+	float: left;
+}
+/*.div_infos{
+	/*float: right;*/
+	/*margin-top: -50px;*/
+	width:120px;
+	height: 50px;
+	background: blue;
+	/*position: absolute;*/
+	float: right;
+
+}*/
+#main{
+	/*position: relative;*/
+	width: 100%;
+	background: green;
+}
+#left{
+	/*width: 40%;*/
+	background: red;
+}
+#right{
+	width: 60%
+	float:right;
+	background: blue;
+}
+table.classTable{
+	width:100%;
+	margin-top: 15px;
+}
+
+table.classTable td.left{
+	width: 70%;
+	/*border: 1px solid red;*/
+}
+table.classTable td.right{
+	width: 30%;
+	/*border: 1px solid red;*/
+}
+span#spacing{
+	 letter-spacing: 2px !important;
+	 font-size: 18px;
+}
+
+table.classTable td{
+	padding: 5px;
+}

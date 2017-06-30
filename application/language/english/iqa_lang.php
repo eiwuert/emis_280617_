@@ -1,0 +1,32 @@
+<?php
+$lang = [
+    'iqa_evaluation_type' => 'Evaluation Type',
+    'iqa_view_evaluation_type' => 'View Evaluation Type',
+    'iqa_name' => 'IQA Name',
+    'iqa_name_kh' => 'IQA Name KH',
+    'iqa_date' => 'Date',
+    'iqa_evaluation_title' => 'Evaluation Title',
+    'iqa_title_kh' => 'Title KH',
+    'iqa_add_more_upper' => 'ADD MORE',
+    'iqa_name_is_required' => 'IQA Name is required',
+    'iqa_successful_adding' => 'You have successfully added IQA ',
+    'iqa_successful_updating' => 'You have successfully updated IQA ',
+    'iqa_error_adding_updating' => 'Error adding/updating IQA',
+    'iqa_evaluation_title_kh' => 'Evaluation Title KH',
+    'iqa_successful_deleted' => 'Deleted',
+    'iqa_one_or_multiple' => 'IQA(s)',
+    'iqa_cannot_be_deleted' => 'Could not deleted selected IQA.',
+    'iqa_no_iqa_to_display' => 'There is no IQA to display',
+    'iqa_evaluation_type_confirm_delete' => 'Are you sure to delete selected IQA(s)?',
+    'iqa_evaluation_type_none_selected' => 'You have not selected any IQA to delete',
+    // IQA Tool
+    'iqa_employee_name' => 'Employee Name',
+    'iqa_date_from' => 'Date From',
+    'iqa_date_to' => 'Date To',
+    'iqa_result_accessor' => 'Accessor By',
+    'iqa_type' => 'IQA Type',
+    'iqa_tool_criteria' => 'Criteria',
+    'iqa_score' => 'Score',
+    'iqa_tool' => 'IQA Tool',
+    'iqa_evaluation_for' => 'IQA Evaluation For'
+];

@@ -1,0 +1,22 @@
+<?php
+$lang['school_class'] = 'class';
+$lang['school_class_id'] = 'Class ID';
+$lang['school_class_name'] = 'Class Name';
+$lang['school_class_note'] = 'Note';
+$lang['school_class_new'] = 'New school_class';
+$lang['school_class_update'] = 'Update';
+$lang['school_class_no_school_class_to_display'] = 'There is no school_class to display';
+$lang['school_class_basic_information'] = 'Class Basic Information';
+$lang['school_class_successful_adding']='You have successfully added school_class ';
+$lang['school_class_successful_updating']='You have successfully updated school_class ';
+$lang['school_class_error_adding_updating'] = 'Error adding/updating school_class';
+$lang['school_class_successful_deleted']='Deleted';
+$lang['school_class_one_or_multiple']='Class(s)';
+$lang['school_class_cannot_be_deleted']='Could not deleted selected school_class.';
+$lang['school_class_confirm_delete']='Are you sure to delete selected school_class(s)?';
+$lang['school_class_none_selected']='You have not selected any school_class to delete';
+$lang['school_class_view_student_status'] = 'View school_class';
+$lang['school_class_confirm_delete_item'] = 'Are you sure you want to delete this school_class?';
+$lang['school_class_error_delete'] = 'Error deleting school_class';
+$lang['school_class_duplicate_exists'] = 'Class duplicated';
+$lang['school_class_school_class_name_required'] = 'Class Name is required';
