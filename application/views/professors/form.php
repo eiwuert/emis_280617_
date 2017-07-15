@@ -3,7 +3,7 @@
 	<?php echo create_breadcrumb(); ?>
 </div>
 <div class="page-header" id='page-header'>
-	<h1 ><i class="fa fa-pencil"></i> 
+	<h1 ><i class="fa fa-pencil"></i>
 		<?php
 		if (!$person_info->person_id) {
 			echo lang('professors_new');
@@ -30,8 +30,8 @@
 				$current_employee_editing_self = $this->Employee->get_logged_in_employee_info()->person_id == $person_info->person_id;
 			?>
 			<!-- employee_form -->
-			<form class="form-horizontal" id="----employee_form" enctype="multipart/form-data" action="<?php echo site_url("$controller_name/save/$person_info->person_id");?>" method="post">
-			
+			<form class="form-horizontal" id="employee_form" enctype="multipart/form-data" action="<?php echo site_url("$controller_name/save/$person_info->person_id");?>" method="post">
+
 				<div class="form-group required" style="margin-bottom: 10px;">
 				<?php echo form_label(lang('professors_id') . ':', 'emp_unique_id',array('class' => $required . ' col-sm-3 col-md-3 col-lg-2 control-label'));?>
 				<div class="col-sm-9 col-md-9 col-lg-5">
@@ -47,7 +47,7 @@
 					?>
 				</div>
 				</div>
-				
+
 				<?php $this->load->view("people/form_basic_info"); ?>
 
 				<div class="form-group" style="margin-bottom: 10px;">
@@ -68,7 +68,7 @@
 				        ?>
 				    </div>
 				</div>
-				
+
 				<div class="form-group" style="margin-bottom: 10px;">
 	                <?php
 	                echo form_label(lang('common_designation') . ':', 'emp_master_designation_id', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label'));
@@ -128,7 +128,7 @@
 				</div>
 
 				<legend class="page-header text-info"> &nbsp; &nbsp; <?php echo lang("employees_emergency_contact"); ?></legend>
-				<div class="form-group"> 
+				<div class="form-group">
 				    <?php echo form_label(lang('employees_contact_name') . ':', 'contact_name', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
 				    <div class="col-sm-9 col-md-9 col-lg-5">
 				        <?php
@@ -140,7 +140,7 @@
 				        ?>
 				    </div>
 				</div>
-				<div class="form-group">  
+				<div class="form-group">
 				    <?php echo form_label(lang('employees_relationship') . ':', 'relationship', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
 				    <div class="col-sm-9 col-md-9 col-lg-5">
 				        <?php
@@ -152,7 +152,7 @@
 				        ?>
 				    </div>
 				</div>
-				<div class="form-group">  
+				<div class="form-group">
 				    <?php echo form_label(lang('employees_contact_number') . ':', 'contact_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
 				    <div class="col-sm-9 col-md-9 col-lg-5">
 				        <?php
@@ -170,7 +170,7 @@
 					?>
 				</div>
 				<legend class="page-header text-info"> &nbsp; &nbsp; <?php echo lang("common_bank_info"); ?></legend>
-				<div class="form-group"> 
+				<div class="form-group">
 					<?php echo form_label(lang('common_bank_name') . ':', 'bank_name', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
 					<div class="col-sm-9 col-md-9 col-lg-5">
 						<?php
@@ -182,7 +182,7 @@
 						?>
 					</div>
 				</div>
-				<div class="form-group"> 
+				<div class="form-group">
 					<?php echo form_label(lang('common_bank_account_no') . ':', 'bank_number', array('class' => 'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
 					<div class="col-sm-9 col-md-9 col-lg-5">
 						<?php
@@ -305,7 +305,7 @@
 				{
 					required: <?php echo json_encode(lang('common_ID_required')); ?>
 				},
-				email: 
+				email:
 				{
 					remote: <?php echo json_encode(lang('employees_email_exists')); ?>,
 					required: <?php echo json_encode(lang('employees_email_required')); ?>,
@@ -356,7 +356,7 @@
 	$(function(){
         $('#emp_master_department_id').on('change',function(){
             $id_department = $(this).val();
-           	
+
         });
     });
 </script>
